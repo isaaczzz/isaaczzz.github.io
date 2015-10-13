@@ -1,0 +1,261 @@
+
+/* HTML AND BODY */
+
+
+html, body{
+	height: 100%;
+    box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-size: 12pt;
+	font-family: "Source Sans Pro", "Segoe UI", Helvetica, Ariel, sans-serif;
+	font-weight: normal;
+	color: #222028;
+	background-color: #333333;
+}
+
+hr{
+    width: 125%;
+    height: 0;
+    margin: 0 0 30px -30px;
+    border-top: 1px solid #B8B4BF;
+}
+
+b{
+    font-weight: 600;
+}
+
+p > b{
+    color: #70335C;
+}
+
+header{
+    position: relative;
+    z-index: 98;
+
+    height: 100%;
+
+    background: url(/assets/header.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.hwrapper1{
+    position: relative;
+    float: left;
+    text-align: left;
+    font-weight: 600;
+    font-size: 6em;
+        
+    top: 50%;
+    left: 25%;
+    
+    transform: translateX(-25%) translateY(-50%);
+    -webkit-transform: translateX(-25%) translateY(-50%);
+    -moz-transform: translateX(-25%) translateY(-50%);
+    
+}
+
+.inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+}
+
+dl{
+    margin: 0;
+}
+
+.accordion {
+    height: auto;
+    width: -webkit-calc(100%-30px);
+    background: #F5F0FF;
+    padding: 30px 0 0 30px;
+    overflow: hidden;
+    border-top: 1px solid #B8B4BF;  
+    border-bottom: 1px solid #B8B4BF; 
+}
+
+dt, dd{
+    padding: 0;
+    color: #222028;
+}
+
+dt{
+    margin: 0 0 30px 0;
+    padding: 0;
+    font-weight: 400;
+    color: #222028;
+    font-size: 2.75em;
+    line-height: .75em;
+}
+
+dt > b{
+    font-weight: 700;
+}
+
+dd {,
+/*    position: relative;*/
+}
+
+
+/* SCROLLERS */
+
+.wrapper { 
+        background: #F5F0FF; 
+        margin: 0 0 30px 0;
+        padding: 0;
+        position: relative;
+        width: 100%;
+    }
+    .scrolls { 
+        overflow-x: scroll;
+        overflow-y: hidden;
+        height: 100%;
+    white-space:nowrap;
+    } 
+
+.scrolls > img{
+    margin: 0 30px 0 0;
+    padding: 0;
+    height: 440px;
+    cursor: pointer;
+    display:inline-block;
+    vertical-align:top;
+    &:last-of-type{
+        margin: 0;
+    }
+}
+
+.bigger > img{
+    height: 500px;
+    width: auto;
+}
+
+.med > img{
+    height: 415px;
+    width: auto;
+}
+
+.short > img{
+    height: 300px;
+    width: auto;
+}
+
+.video-js{
+    float: left;
+    margin-right: 30px;
+}
+
+/* END SCROLLERS */
+
+    
+a:link{
+    text-decoration: none;
+    font-weight: inherit;
+    color: inherit;
+}
+
+a:visited{
+    color: inherit;
+}
+
+a:hover{
+    color: #70335C;
+}
+
+a:link.sub{
+    font-weight: 600;
+    color: #70335C;
+}
+
+a:hover.sub{
+    color: #222028;
+}
+
+.description {
+    z-index: 98;
+    position: relative;
+    float: left;
+/*    margin-left: 30px;*/
+/*
+    max-width: 22.5%;
+    min-width: 350px;
+*/
+/*    height: -webkit-calc(440px - 2.5em);*/
+    width: 350px;
+    height: auto;
+    word-wrap: break-word;
+    line-height: 1.75em;
+    padding: 0;
+    margin: 0 30px 0 0;
+/*    background: #1D0233;*/
+    text-align: left;
+    color: #222028;
+}
+
+.description > p{
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+.scrolls::scrollbar { 
+    display: none; 
+}
+
+.scrolls::-webkit-scrollbar { 
+    display: none; 
+}
+
+.scrolls::-moz-scrollbar { 
+    display: none; 
+}
+
+/* hidden fixed navigation */
+#fixedbar { 
+    z-index: 99;
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: auto;
+  background: rgba(245,240,255,0.9);
+}
+
+#fixednav { 
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+#fixednav li {
+    list-style-type: none;
+}
+
+#fixednav li a {
+  display: inline-block;
+    margin: auto;
+  float: right;
+  font-size: 1em;
+  font-weight: 600;
+  color: #222028;
+  line-height: 3em;
+  text-decoration: none;
+  padding: 0px 2em;
+/*  margin-right: 6px; */
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  transition: all 0.2s linear; 
+}
+
+#fixednav li a:hover {
+/*  color: #fff;*/
+  background: rgba(150,45,62,0.1);
+}
