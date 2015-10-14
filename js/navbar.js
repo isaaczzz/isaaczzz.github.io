@@ -1,7 +1,7 @@
 $(document).ready(function(){
-  $('#navigation a, #fixedbar a').on('click', function(e) {
-    e.preventDefault();
-  });
+//  $('#navigation a, #fixedbar a').on('click', function(e) {
+//    e.preventDefault();
+//  });
   
   $(window).on('scroll',function() {
     var scrolltop = $(this).scrollTop();
